@@ -5,9 +5,17 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <TextView
-        android:text="Home Fragment"
-        android:textSize="24sp"
+    <ProgressBar
+        android:id="@+id/pbLoading"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:visibility="gone"/>
 </LinearLayout>
